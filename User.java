@@ -1,21 +1,17 @@
 import java.util.Scanner;
 class User {
     public static void main(String[]args){
-        
-        // Declaring Scanner to as new, new data will be given by User
-        Scanner num = new Scanner(System.in);
-        // Asking user to give two String value using num object as a String using nextLine function predifined in java
-        System.out.println("What's your name:");
-        
-        // Asking user to give two String value using num object as a String using nextLine function predifined in java
-        String name = num.nextLine();
-        //pring name
-        System.out.println("My name is" + " : " + name);
-        
-        // Asking user to give two String value using num object as a String using nextLine function predifined in java
-        System.out.println("What's your branch:");
-        String branch = num.nextLine();
-        //pring branch
-        System.out.println("My branch is" + " : " + branch);
+        Scanner a = new Scanner(System.in);
+        System.out.println("Enter Two Number:");
+        int num1 = a.nextInt();
+        int num2 = a.nextInt();
+        System.out.println(num1 + " " + num2);
+        int temp;
+
+        temp = num1;
+        num1 = num2;
+        num2 = temp;
+
+        System.out.println(num1 + " " + num2);
     }
 }
